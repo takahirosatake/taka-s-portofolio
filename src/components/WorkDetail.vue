@@ -15,8 +15,8 @@
          {{ works[workIndex].name }}
       </h2>
       <div class="work-detail__box">
-        <div class="work-detail_img">
-          <img :src="require('../assets/image/'+works[workIndex].image)" class="drop-shadow">
+        <div class="work-detail__img">
+          <img :src="require('../assets/image/'+ work.image) " class="box-shadow">
         </div>
         <div class="work-detail__content">
           <div class="work-detail__text">
@@ -52,6 +52,7 @@ export default {
   name:'WorkDetail',
   props:{
     id: Number,
+    image: String,
     work: Object,
   },
   data(){
@@ -92,12 +93,11 @@ export default {
   margin-bottom: 40px;
 }
 
-.drop-shadow {
-    -webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));
-}
-
-// .box-shadow {box-shadow: 0px 3px 10px rgba(0,0,0,.8)}
+// .drop-shadow {
+//     -webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+//     filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));
+// }
+.box-shadow {box-shadow: 0px 3px 10px rgba(0,0,0,.8)}
 
 .work-detail {
   max-width: 800px;

@@ -51,6 +51,7 @@ export default {
         params:{
           id: this.works[this.workIndex].id,
           work : this.works[this.workIndex],
+          image : this.works[this.workIndex].image
         }
       })
     }
