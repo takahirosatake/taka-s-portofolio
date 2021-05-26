@@ -2,7 +2,7 @@
   {   
       "id": 1,
       "name": "musclegram",
-      "image": "musclegram.png",
+      "image": "musclegram.jpeg",
       "text": "youtubeDataAPIを用いた動画SNSサイトを作りました。\n Rubyフレームワークを用いた自主制作です。",
       "period": "2 months",
       "skills" :[
@@ -16,7 +16,7 @@
   {
       "id": 2,
       "name": "takahiro-portfolio",
-      "image": "portfolio.png",
+      "image": "portfolio.jpeg",
       "text": "自主制作のポーロフォリオサイトです。 \n htmlとcssのアウトプットため作成しました。",
       "period": "3 weeks",
       "skills" :[
@@ -30,7 +30,7 @@
   {
       "id": 3,
       "name": "connect",
-      "image": "connect.app.png",
+      "image": "connect.app.jpeg",
       "text": "laravelとvueコンポーネントを使ったシンプルなSNSアプリです。 \n メール通知機能(現在機能停止中)や、googleアカウントからの登録・ログインも可能です。",
       "period": "3 weeks",
       "skills" :[
