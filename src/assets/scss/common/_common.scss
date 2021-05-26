@@ -1,0 +1,43 @@
+/* ----------------------------------------------------------
+/* common
+/* 基本的なスタイル
+/* ---------------------------------------------------------- */
+
+body,
+div,
+iframe,
+blockquote,
+a,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+input,
+textarea,
+table,
+th,
+td,v
+article,
+aside,
+canvas,
+footer,
+header,
+menu,
+nav,
+section,
+main {
+  box-sizing: border-box;
+}
+
+html {
+  // scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

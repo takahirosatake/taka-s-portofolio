@@ -1,0 +1,31 @@
+[
+    {   
+        "id": 1,
+        "フロントエンド" :[
+            {"name": "html"},
+            {"name": "css(scss)"},
+            {"name": "javascript"},
+            {"name": "vue.js"}
+        ]
+    },
+    {
+        "id": 2,
+        "バックエンド" :[
+            {"name": "Ruby"},
+            {"name": "Ruby on Rails"},
+            {"name": "PHP"},
+            {"name": "Laravel"}
+        ]
+    },
+    {
+        "id": 3,
+        "other" :[
+            {"name": "AWS"},
+            {"name": "Docker"},
+            {"name": "github"},
+            {"name": "slack"},
+            {"name": "heroku"}
+        ]
+    }
+  ]
+  
