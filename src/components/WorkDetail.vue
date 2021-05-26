@@ -16,7 +16,7 @@
       </h2>
       <div class="work-detail__box">
         <div class="work-detail_img">
-          <img :src="require('../assets/image/'+ works[workIndex].image) " class="drop-shadow">
+          <img :src="require('../assets/image/'+works[workIndex].image)" class="drop-shadow">
         </div>
         <div class="work-detail__content">
           <div class="work-detail__text">
