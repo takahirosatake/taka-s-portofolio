@@ -7,7 +7,7 @@
     </div>
     <form class="contact__form" @submit.prevent="onSubmit" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" :class="sendingClass">
       <!-- DOM追加を手動で行っている -->
-      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="form-name" value="contact" />
 
       <div class="contact__item">
         <label for="username">お名前</label>
@@ -61,7 +61,7 @@ export default {
           this.errors = []
           const params = new URLSearchParams();
           params.append('form-name', 'contact');
-          
+
           if(!this.contact.username){
             this.errors.push('氏名は必須です')
           } else if(this.contact.username.length > 20){
