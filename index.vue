@@ -1,28 +1,32 @@
 <template>
   <div class="contact">
-    
-
-      <form name="contact" method="POST" data-netlify="true">
+    <div class="contact__error" v-if="errors.length">
+      <ul class="error" v-for="error in errors" :key="error.id">
+        <li>{{ error }}</li>
+      </ul>
+    </div>
+    <form class="contact__form" @submit.prevent="onSubmit" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" :class="sendingClass">
+      <!-- DOM追加を手動で行っている -->
       <input type="hidden" name="form-name" value="contact" />
- <p>
-   <label>Your Name: <input type="text" name="name" /></label>   
- </p>
- <p>
-   <label>Your Email: <input type="email" name="email" /></label>
- </p>
- <p>
-   <label>Your Role: <select name="role[]" multiple>
-     <option value="leader">Leader</option>
-     <option value="follower">Follower</option>
-   </select></label>
- </p>
- <p>
-   <label>Message: <textarea name="message"></textarea></label>
- </p>
- <p>
-   <button type="submit">Send</button>
- </p>
-</form>
+
+      <div class="contact__item">
+        <label for="username">お名前</label>
+      <input type="text" id="username" name="username"  v-model="contact.username" autocomplete="name"><!-- computed で監視している値 -->
+      </div>
+      <p :class="{error: hasError.username}"> {{ contact.username.length }} / 20</p>
+      <p v-show="hasError.username" class="error">氏名は20文字以内で入力してください。</p>
+      <div class="contact__item">
+        <label for="email">メールアドレス</label>
+        <input type="email" v-model.lazy.trim="contact.email" id="email" name="email">
+      </div>
+      <div class="contact__item">
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message"  v-model="contact.message"></textarea>
+      </div>
+      <div class="contact__submit">
+        <input type="submit" value="送信">
+      </div>
+    </form>
   </div>
 </template>
 
