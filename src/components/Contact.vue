@@ -1,6 +1,8 @@
 <template>
-  <form
-    ...
+  <div>
+
+  <form 
+    name="ask-question"
     @submit.prevent="handleSubmit">
     <label v-for="(panelist, index) in panelists" :key="index">
       <input
@@ -12,8 +14,8 @@
       />
       <span>{{ panelist }}</span>
     </label>
-    ...
   </form>
+  </div>
 </template>
 <script>
 import axios from "axios";
@@ -51,4 +53,3 @@ export default {
   }
 }
 </script>
-

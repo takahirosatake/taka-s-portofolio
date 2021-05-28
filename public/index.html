@@ -10,6 +10,8 @@
   <body>
     <div id="app">
       <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
+              <!-- DOM追加を手動で行っている -->
+        <input type="hidden" name="form-name" value="ask-question" />
         <input type="text" name="name" />
         <input type="radio" name="panelist" />
         <textarea name="question"></textarea>
