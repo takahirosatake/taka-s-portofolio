@@ -2,10 +2,10 @@
 <html>
   <body>
     <form name="contact" netlify netlify-honeypot="bot-field" hidden >
-      <input type="text" id="username" name="username"  v-model="contact.username" 
+      
+      <input type="text" id="username" name="username"  v-model="username">
       <input type="email" v-model.lazy.trim="contact.email" id="email" name="email">
       <textarea id="message" name="message"  v-model="contact.message"></textarea>
-      <textarea name="content">
     </form>
   </body>
 </html>
