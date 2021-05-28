@@ -9,11 +9,22 @@
   </head>
   <body>
     <div id="app">
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-      　<textarea name="message"></textarea>
-      </form>
+      <form
+    method="POST"
+    name="contact"
+    novalidate="true"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+  >
+
+    <input type="text" name="sampleText"/>
+    <input type="file" name="sampleFile"/>
+    
+    <!-- 送信ボタン -->
+    <button type="submit" >
+      SUBMIT
+    <button>
+  </form>
     </div>
   </body>
 </html>
