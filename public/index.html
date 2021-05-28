@@ -9,22 +9,11 @@
   </head>
   <body>
     <div id="app">
-      <form
-    method="POST"
-    name="contact"
-    novalidate="true"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-  >
-
-    <input type="text" name="sampleText"/>
-    <input type="file" name="sampleFile"/>
-    
-    <!-- 送信ボタン -->
-    <button type="submit" >
-      SUBMIT
-    <button>
-  </form>
+      <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="radio" name="panelist" />
+        <textarea name="question"></textarea>
+      </form>
     </div>
   </body>
 </html>
