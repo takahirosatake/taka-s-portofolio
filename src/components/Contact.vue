@@ -1,10 +1,4 @@
 <template>
-  <div class="contact">
-    <div class="contact__error" v-if="errors.length">
-      <ul class="error" v-for="error in errors" :key="error.id">
-        <li>{{ error }}</li>
-      </ul>
-    </div>
     <form class="contact__form" @submit.prevent="onSubmit" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" :class="sendingClass">
       <!-- DOM追加を手動で行っている -->
       <input type="hidden" name="form-name" value="contact" />
@@ -27,7 +21,6 @@
         <input type="submit" value="送信">
       </div>
     </form>
-  </div>
 </template>
 
 <script>
