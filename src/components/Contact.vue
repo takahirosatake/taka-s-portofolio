@@ -64,8 +64,8 @@
             </form>
         </template>
         <template v-else>
-          <div v-text="'お問い合わせ頂きありがとうございました。'" />
-          <div><router-link to="/" v-text="'ホームへ'" /></div>
+          <div class="title" v-text="'お問い合わせ頂きありがとうございました。'" />
+          <div class="route"><router-link to="/" v-text="'ホームへ'" /></div>
         </template>
       </div>
     </div>
@@ -193,6 +193,15 @@ export default {
         }
     }
 }
+
+.title{
+  text-align: center;
+}
+
+.route {
+  text-align: center;
+}
+
 .error {
   color:red
 }
