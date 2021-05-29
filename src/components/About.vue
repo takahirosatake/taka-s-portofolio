@@ -18,6 +18,18 @@
             <div class="about__hobby">
               趣味 : Game(RPG) / Music / Rockfes. / Bodybuilding
             </div>
+            <div class="about__link">
+              <h5 class="about__link__title">Links</h5>
+              <a href="https://twitter.com/taka40744471" target="_blank">
+                <img :src="require('../assets/svg/twitter.svg')">
+              </a>
+              <a href="https://github.com/takahirosatake" target="_blank">
+                <img :src="require('../assets/svg/github.svg')">
+              </a>
+              <a href="https://qiita.com/ponsata" target="_blank">
+                <img :src="require('../assets/image/qiita.png')">
+              </a>
+            </div>
           </div>
           <div class="about__image">
             <img :src="require('../assets/image/myimage.png')">
@@ -154,6 +166,15 @@ export default {
         @include mq-sm {
             text-align: center;
         }
+    }
+    &__link {
+      & > a {
+        & > img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
     }
     &__image {
         @include mq-sm {
