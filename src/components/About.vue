@@ -121,7 +121,6 @@
 </template>
 
 <script>
-import skills from '../assets/skills.json'
 
 
 export default {
