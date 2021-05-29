@@ -22,10 +22,13 @@
           <div class="work-detail__text">
             {{ works[workIndex].text }}
           </div>
-          <div class="work-detail__period">
+          <div class="work-detail__title">
             制作期間 : {{ works[workIndex].period }}
           </div>
           <ul class="work-detail__skill" >
+            <div class="work-detail__title">
+              Skills :
+            </div>
             <li class="work-detail__skill__list" v-for="skill in works[workIndex].skills" :key= "skill.id">
               {{skill.name}}
             </li>
@@ -108,10 +111,18 @@ export default {
   &__skill {
     list-style: none;
     margin-left: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
     & > li {
       display: inline-block;
       padding-right: 10px
     }
+  }
+  &__title{
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-right: 10px;
   }
   &__url {
     list-style: none;

@@ -1,7 +1,9 @@
 <template>
   <div v-cloak id="app">
     <Header></Header>
-    <router-view/>
+    <transition name="fade">
+      <router-view/>
+    </transition>
     <Footer></Footer>
   </div>
 </template>

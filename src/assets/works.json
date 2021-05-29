@@ -40,5 +40,19 @@
       ],
       "url": "http://connect-sns.herokuapp.com/",
       "githubURL": "https://github.com/takahirosatake/connect-sns"
+  },
+  {
+      "id": 4,
+      "name": "taka's portfolio",
+      "image": "takaportfolio.jpeg",
+      "text": "vue.jsを使ったポートフォリオサイトです。vue.jsのアウトプットのために作りました。SPA(シングルアプリケーション)になっています。",
+      "period": "3 weeks",
+      "skills" :[
+          {"name": "javascript"},
+          {"name": "vue.js"},
+          {"name": "netlify"}
+      ],
+      "url": "https://takahiro-portfolio.netlify.app/",
+      "githubURL": "https://github.com/takahirosatake/takahiro-portofolio"
   }
 ]
