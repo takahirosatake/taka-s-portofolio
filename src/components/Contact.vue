@@ -181,6 +181,7 @@ export default {
         @include mq-sm {
           padding: 0;
           padding-top: 60px;
+          padding-bottom: 60px;
         }
     }
     &__container {
