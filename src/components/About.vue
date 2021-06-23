@@ -30,6 +30,9 @@
                 <img :src="require('../assets/image/qiita.png')">
               </a>
             </div>
+            <div class="wantedly"> 
+              <a href="https://www.wantedly.com/id/takahiro_satake" target="_blank">wantedly</a>
+            </div>
           </div>
           <div class="about__image">
             <img :src="require('../assets/image/myimage.png')">
@@ -269,5 +272,9 @@ export default {
     }
 }
 
+.wantedly{
+    font-size: 15px;
+    font-weight: bold;
+}
 
 </style>
