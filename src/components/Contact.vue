@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <div class="contact__inner">
-      <h2 class="headline">contact</h2>
+      <h2 class="headline">Contact</h2>
       <div class="contact__container">
         <template v-if="!finished">
             <div class="contact__error" v-if="errors.length">
