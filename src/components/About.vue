@@ -20,7 +20,7 @@
             </div>
             <div class="about__link">
               <h5 class="about__link__title">Links</h5>
-              <a href="https://twitter.com/taka40744471" target="_blank">
+              <a href="https://twitter.com/04237Khr" target="_blank">
                 <img :src="require('../assets/svg/twitter.svg')">
               </a>
               <a href="https://github.com/takahirosatake" target="_blank">
@@ -52,30 +52,30 @@
                   Daito Bunka Univ. Economics 2013/04~2017/03
                 </li>
                 <li class="career__item">
-                  ジャパン建材株式会社 2017/04 ~ 2020/05
+                  ジャパン建材株式会社 営業職 2017/04 ~ 2020/05
+                </li>
+                <li class="career__item">
+                  株式会社日東システムテクノロジーズ 開発SE 2021/08 ~ これから
                 </li>
               </ul>
               <h4 class="career__work">
                 仕事観
               </h4>
               <div class="career__text">
-                クライアントに寄り添い、お力になれること
+                社会に選択肢を提供できる人材になりたい。
               </div>
               <div class="career__sub">
-                ・前職は、営業としてクライアントを導くこと<br>
+                ・新卒入社の会社では、営業としてクライアントを力になれること<br>
                 ・目的意識と責任感を持ち誠意持って対応しておりました。<br>
-                ・今後は、エンジニアとしてユーザーやクライアントの課題解決に尽力してきたいと考えております。
+                ・現在はエンジニアとしてユーザーやクライアントの課題解決に尽力してきたいと考えております。
               </div>
               <h4 class="career__work">
                 これから
               </h4>
-              <div class="career__text">
-                エンジニアとして、日本のマーケットを根強いものにしていきたい。
-              </div>
               <div class="career__sub">
                 ・業界に縛られず、ITから日本のマーケットを強化できる人材になる。<br>
                 ・DXビジネスにも貢献できるエンジニアを目指す。<br>
-                ・スキルアップのために毎日アルゴリズムの演習を解いています。<br>
+                ・アルゴリズム学習に励んでおります。<br>
               </div>
               <h4 class="career__work">
                 現在の取り組み＆今できること
@@ -87,7 +87,7 @@
                 ・スキルアップのためにアルゴリズムを解くことやアプリ作成を行っています。<br>
                 ・LeetcodeやPaiza(Bランク相当)で毎日コードを書いています。<br>
                 ・前職の営業経験をいかし、ドキュメントなどの資料作成を得意としております。<br>
-                ・クライアントへの提案力・コミュニケーション力に自信があります。<br>
+                ・プレゼンテーション・コミュニケーション力に自信があります。<br>
               </div>
             </div>
           </div>
