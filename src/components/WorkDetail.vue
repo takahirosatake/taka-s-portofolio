@@ -1,9 +1,6 @@
 <template>
 
   <div class="work-detail" v-cloak >
-    <div id="name">
-      test
-    </div>
     <nav class="breadcrumb-nav">
       <ul>
         <li>
