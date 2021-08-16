@@ -36,6 +36,7 @@ const routes = [
     props: route => ({ 
         id: Number(route.params.id),
         image: String(route.params.image),
+        stop : Boolean(route.params.stop),
         work: Object(route.params.work)
     })
   },

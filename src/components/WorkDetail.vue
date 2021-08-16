@@ -1,5 +1,9 @@
 <template>
+
   <div class="work-detail" v-cloak >
+    <div id="name">
+      test
+    </div>
     <nav class="breadcrumb-nav">
       <ul>
         <li>
@@ -33,14 +37,14 @@
               {{skill.name}}
             </li>
           </ul>
-          <ul class="work-detail__url">
-            <li class="work-detail__url__list">
-              <a :href="works[workIndex].url" target="_blank">{{ works[workIndex].name }}</a>
-            </li>
-            <li class="work-detail__url__list">
+          <div id="work-detail__url">
+            <a class="work-detail__url__list">
+              <a v-bind:class="works[workIndex].stop? borderText : false" :href="works[workIndex].url" target="_blank" >{{ works[workIndex].name }}</a>
+            </a>
+            <a class="work-detail__url__list">
               <a :href="works[workIndex].githubURL" target="_blank">github</a>
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
         </div>
     </div>
@@ -57,17 +61,25 @@ export default {
     id: Number,
     image: String,
     work: Object,
+    stop: Boolean
   },
   data(){
     return{
       workIndex: this.$route.params.id -1,
-       works: works
+      works: works,
+      borderText : "border"
     }
   },
   created(){
     if(this.$route.params.id > this.works.length){
       this.$router.push('/Works')
     }
+    // if(this.$route.params.stop){
+    //   const border = document.getElementById('name');
+    //   console.log(border);
+    //   border.classList.add('border');
+      
+    // }
   }
 }
 </script>
@@ -96,11 +108,18 @@ export default {
   margin-bottom: 40px;
 }
 
+
+
 // .drop-shadow {
 //     -webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
 //     filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));
 // }
 .box-shadow {box-shadow: 0px 3px 10px rgba(0,0,0,.8)}
+
+.border {
+  text-decoration: line-through;
+}
+
 
 .work-detail {
   max-width: 800px;

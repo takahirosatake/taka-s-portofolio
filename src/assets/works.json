@@ -3,7 +3,7 @@
       "id": 1,
       "name": "musclegram",
       "image": "musclegram.jpeg",
-      "text": "youtubeDataAPIを用いた動画SNSサイトを作りました。\n Rubyフレームワークを用いた自主制作です。",
+      "text": "youtubeDataAPIを用いた動画SNSサイトを作りました。\n Rubyフレームワークを用いた自主制作です。 (現在停止中)",
       "period": "2 months",
       "skills" :[
           {"name": "Ruby on Rails"},
@@ -11,7 +11,8 @@
           {"name": "AWS"}
       ],
       "url": "https://musclegram.net/",
-      "githubURL": "https://github.com/takahirosatake/muslegram"
+      "githubURL": "https://github.com/takahirosatake/muslegram",
+      "stop" : true
   },
   {
       "id": 2,
@@ -25,7 +26,8 @@
           {"name": "heroku"}
       ],
       "url": "https://takahiro-portfolio.herokuapp.com/",
-      "githubURL": "https://github.com/takahirosatake/takahiro-portfolio_site"
+      "githubURL": "https://github.com/takahirosatake/takahiro-portfolio_site",
+      "stop" : false
   },
   {
       "id": 3,
@@ -39,7 +41,8 @@
           {"name": "Docker"}
       ],
       "url": "http://connect-sns.herokuapp.com/",
-      "githubURL": "https://github.com/takahirosatake/connect-sns"
+      "githubURL": "https://github.com/takahirosatake/connect-sns",
+      "stop" : false
   },
   {
       "id": 4,
@@ -53,6 +56,7 @@
           {"name": "netlify"}
       ],
       "url": "https://takahiro-portfolio.netlify.app/",
-      "githubURL": "https://github.com/takahirosatake/takahiro-portofolio"
+      "githubURL": "https://github.com/takahirosatake/takahiro-portofolio",
+      "stop" : false
   }
 ]
